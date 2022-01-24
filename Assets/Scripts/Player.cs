@@ -1,38 +1,40 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
-    public int maxStamina = 10;
-    public int currentStamina;
     public int maxHealth = 100;
     public int currentHealth;
+    public int maxStamina = 100;
+    public int currentStamina;
     public int damage = 10;
 
     public HealthBar healthBar;
-    
+    public HealthBar staminaBar;
+    public GameObject deathScreen;
+
+    //[SerializeField]
+    //private GameObject playerCharacter;
+    private bool deathScreenShown = false;
+
     void Start()
     {
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
+        currentStamina = maxStamina;
+        healthBar.SetMaxHealth(maxStamina);
     }
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Z))
+
+        if (currentHealth <= 0  && !deathScreenShown)
         {
-            TakeDamage(10);
+            PlayerDeath();
+            deathScreenShown = true;
         }
-        if(Input.GetKeyDown(KeyCode.X))
-        {
-            AddHealth(10);
-        }
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            SceneManager.LoadScene(0);
-        }
+          
     }
 
     public void AddHealth(int health)
@@ -47,24 +49,36 @@ public class Player : MonoBehaviour
         currentHealth -= damage;
 
         healthBar.SetHealth(currentHealth);
+
+        if(currentHealth <= 0)
+        {
+            currentHealth = 0;
+        }
     }
 
     public void LoseStamina(int Stamina)
     {
+        currentStamina -= Stamina;
 
+        staminaBar.SetHealth(currentStamina);
+
+        if(currentStamina <= 0)
+        {
+            currentStamina = 0;
+        }
     }
 
     public void ReplenishStamina(int Stamina)
     {
-
-        
+        currentStamina += Stamina;
+        staminaBar.SetHealth(currentStamina);
     }
 
     public void PlayerDeath()
-    {
-        if(currentHealth <= 0)
-        {
-            
-        }
+    {   
+        Destroy(staminaBar);
+        Destroy(healthBar);
+        Instantiate(deathScreen);
+        Debug.Log("Player Died :(");
     }
 }

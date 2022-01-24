@@ -3,6 +3,7 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - HealthBar
     - MainMenu
+    - PauseMenu
     - Player
     - PlayerMovement
     Cinemachine.dll:
@@ -13,7 +14,6 @@ ScriptsOnlyBuild:
     - Cinemachine.CinemachinePipeline
     - Cinemachine.CinemachineVirtualCamera
     Unity.Rider.Editor.dll:
-    - Packages.Rider.Editor.RiderScriptEditorData
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro.dll:
     - TMPro.TMP_FontAsset
@@ -21,13 +21,13 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
-    Unity.Timeline.Editor.dll:
-    - TimelineProjectSettings
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -42,6 +42,69 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Image
     - UnityEngine.UI.Slider
   sceneClasses:
+    Assets/Scenes/MainMenu.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1450}
+    - Class: 114
+      Script: {instanceID: 1452}
+    - Class: 114
+      Script: {instanceID: 1900}
+    - Class: 114
+      Script: {instanceID: 2320}
+    - Class: 114
+      Script: {instanceID: 2818}
+    - Class: 114
+      Script: {instanceID: 2870}
+    - Class: 114
+      Script: {instanceID: 3028}
+    - Class: 114
+      Script: {instanceID: 3098}
+    - Class: 114
+      Script: {instanceID: 3264}
+    - Class: 114
+      Script: {instanceID: 3668}
+    - Class: 114
+      Script: {instanceID: 3792}
+    - Class: 114
+      Script: {instanceID: 33182}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
     Assets/Scenes/PlayScene.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -76,36 +139,48 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1424}
+      Script: {instanceID: 1450}
     - Class: 114
-      Script: {instanceID: 1730}
+      Script: {instanceID: 1452}
     - Class: 114
-      Script: {instanceID: 1738}
+      Script: {instanceID: 1758}
     - Class: 114
-      Script: {instanceID: 2530}
+      Script: {instanceID: 1766}
+    - Class: 114
+      Script: {instanceID: 1900}
+    - Class: 114
+      Script: {instanceID: 2110}
     - Class: 114
       Script: {instanceID: 2560}
     - Class: 114
-      Script: {instanceID: 2624}
+      Script: {instanceID: 2590}
     - Class: 114
-      Script: {instanceID: 2724}
+      Script: {instanceID: 2654}
     - Class: 114
-      Script: {instanceID: 2788}
+      Script: {instanceID: 2754}
     - Class: 114
-      Script: {instanceID: 2884}
+      Script: {instanceID: 2818}
     - Class: 114
-      Script: {instanceID: 2998}
+      Script: {instanceID: 2914}
     - Class: 114
-      Script: {instanceID: 3106}
+      Script: {instanceID: 3028}
     - Class: 114
-      Script: {instanceID: 3126}
+      Script: {instanceID: 3098}
     - Class: 114
-      Script: {instanceID: 3256}
+      Script: {instanceID: 3136}
     - Class: 114
-      Script: {instanceID: 3640}
+      Script: {instanceID: 3156}
     - Class: 114
-      Script: {instanceID: 3786}
+      Script: {instanceID: 3668}
+    - Class: 114
+      Script: {instanceID: 3792}
+    - Class: 114
+      Script: {instanceID: 3814}
+    - Class: 114
+      Script: {instanceID: 33186}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 136
       Script: {instanceID: 0}
@@ -129,70 +204,13 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
-    Assets/Scenes/StartMenu.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 49
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 89
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 108
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 1424}
-    - Class: 114
-      Script: {instanceID: 1872}
-    - Class: 114
-      Script: {instanceID: 2290}
-    - Class: 114
-      Script: {instanceID: 2788}
-    - Class: 114
-      Script: {instanceID: 2840}
-    - Class: 114
-      Script: {instanceID: 2998}
-    - Class: 114
-      Script: {instanceID: 3068}
-    - Class: 114
-      Script: {instanceID: 3234}
-    - Class: 114
-      Script: {instanceID: 3256}
-    - Class: 114
-      Script: {instanceID: 3640}
-    - Class: 114
-      Script: {instanceID: 3764}
-    - Class: 114
-      Script: {instanceID: 16470}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 196
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
   scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: ae83e830e7a90c0aff918c4c2e520825
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: GraphicRaycaster
   - hash:
       serializedVersion: 2
       Hash: a6e561615949734e9f12f9b61661f43e
@@ -513,7 +531,7 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
-      Hash: 9dc492a981f5c37a29de927e30b212fa
+      Hash: 3ec0bfc006f0202d0aebc1c163fbcc61
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Player
@@ -747,12 +765,6 @@ ScriptsOnlyBuild:
     className: TestRunCallbackListener
   - hash:
       serializedVersion: 2
-      Hash: ae83e830e7a90c0aff918c4c2e520825
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: GraphicRaycaster
-  - hash:
-      serializedVersion: 2
       Hash: e7a73f5f78ba6445195ec23b74a1ce2d
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -937,8 +949,14 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MainMenu
+  - hash:
+      serializedVersion: 2
+      Hash: 930b2a7c015542327cee6af349728cdd
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PauseMenu
   platform: 19
   scenePathNames:
-  - Assets/Scenes/StartMenu.unity
+  - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/PlayScene.unity
-  playerPath: C:/Projects/Kitchen-Island-Prototype/Build/Kitchen-Island-Prototype.exe
+  playerPath: C:/Projects/Game-Prototype/Build/Kitchen-Island-Prototype.exe
