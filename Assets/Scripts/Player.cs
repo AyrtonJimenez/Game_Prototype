@@ -16,6 +16,17 @@ public class Player : MonoBehaviour
             Destroy(other.gameObject);
         }
     }
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.N))
+        {
+            inventory.Save();
+        }
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            inventory.Load();
+        }
+    }
 
     private void OnApplicationQuit()
     {

@@ -59,18 +59,20 @@
     <Compile Include="Assets\Scripts\StaminaBar.cs" />
     <Compile Include="Assets\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\Items\DefaultObject.cs" />
+    <Compile Include="Assets\Item.cs" />
+    <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\FollowPlayer.cs" />
     <Compile Include="Assets\Scripts\PlayerHealth.cs" />
     <Compile Include="Assets\Scripts\Items\ItemObject.cs" />
     <Compile Include="Assets\Scripts\HealthBar.cs" />
+    <Compile Include="Assets\DisplayInventory.cs" />
+    <Compile Include="Assets\Scripts\Items\InventoryObject.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Items\WeaponObject.cs" />
     <Compile Include="Assets\Scripts\Items\ConsumableObject.cs" />
-    <Compile Include="Assets\Scripts\Items\InventoryObject.cs" />
-    <Compile Include="Assets\Scripts\Player.cs" />
-    <Compile Include="Assets\Item.cs" />
-    <Compile Include="Assets\DisplayInventory.cs" />
+    <Compile Include="Assets\Scripts\Items\ItemDatabaseObject.cs" />
+    <Compile Include="Assets\Scripts\Items\CraftableObject.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

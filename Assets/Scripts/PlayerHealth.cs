@@ -32,6 +32,13 @@ public class PlayerHealth : MonoBehaviour
         {
             AddHealth(5);
         }
+        if(Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            for(int i = maxStamina; i<= 0; i++)
+            {
+                LoseStamina(5);
+            }
+        }
     }
 
     public void AddHealth(int health)
@@ -43,7 +50,7 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        currentHealth -= damage;
+        currentHealth = currentHealth - damage;
 
         healthBar.SetHealth(currentHealth);
 
@@ -55,7 +62,7 @@ public class PlayerHealth : MonoBehaviour
 
     public void LoseStamina(int Stamina)
     {
-        currentStamina -= Stamina;
+        currentStamina = currentStamina - Stamina;
 
         staminaBar.SetHealth(currentStamina);
 

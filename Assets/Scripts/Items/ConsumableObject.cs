@@ -5,7 +5,6 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Consumable Object", menuName = "Inventory System/Items/Consumable")]
 public class ConsumableObject : ItemObject
 {
-    public GameObject player;
 
     public void Awake()
     {
@@ -14,9 +13,6 @@ public class ConsumableObject : ItemObject
 
     public void GiveHealth(int health)
     {
-        if(player )
-        {
 
-        }
     }
 }

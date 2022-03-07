@@ -107,5 +107,29 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.93859005
       objectReference: {fileID: 0}
+    - target: {fileID: 826393969680863910, guid: 3d5d96138a7c8c44a8281b9d8797394a, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 18.2907
+      objectReference: {fileID: 0}
+    - target: {fileID: 826393969680863910, guid: 3d5d96138a7c8c44a8281b9d8797394a, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 28.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 826393969680863910, guid: 3d5d96138a7c8c44a8281b9d8797394a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -40.855
+      objectReference: {fileID: 0}
+    - target: {fileID: 826393969680863910, guid: 3d5d96138a7c8c44a8281b9d8797394a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 35.775
+      objectReference: {fileID: 0}
+    - target: {fileID: 826393969680863913, guid: 3d5d96138a7c8c44a8281b9d8797394a, type: 3}
+      propertyPath: m_fontSize
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 826393969680863913, guid: 3d5d96138a7c8c44a8281b9d8797394a, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 28
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d5d96138a7c8c44a8281b9d8797394a, type: 3}

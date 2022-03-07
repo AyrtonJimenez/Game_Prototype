@@ -7,6 +7,7 @@ public enum ItemType
     Default,
     Weapon,
     Consumable,
+    Craftable,
 }
 
 public abstract class ItemObject : ScriptableObject

@@ -7,19 +7,26 @@ public class DisplayInventory : MonoBehaviour
 {
     public InventoryObject inventory;
 
+    public int xStart;
+    public int yStart;
     public int xBetweenItems;
     public int numberOfColumns;
     public int yBetweenItems;
+
     Dictionary<InventorySlot, GameObject> itemsDisplayed = new Dictionary<InventorySlot, GameObject>();
 
     void Start()
     {
-        CreateDisplay();    
+        //CreateDisplay();
     }
 
     void Update()
     {
-        UpdateDisplay();    
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            CreateDisplay();
+            UpdateDisplay();
+        }
     }
 
     public void CreateDisplay()
@@ -34,7 +41,7 @@ public class DisplayInventory : MonoBehaviour
 
     public Vector3 GetPosition(int i)
     {
-        return new Vector3(xBetweenItems * (i % numberOfColumns), (-yBetweenItems * (i / numberOfColumns)), 0f);
+        return new Vector3(xStart +(xBetweenItems * (i % numberOfColumns)), yStart + (-yBetweenItems * (i / numberOfColumns)), 0f);
     }
 
     public void UpdateDisplay()

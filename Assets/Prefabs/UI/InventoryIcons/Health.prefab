@@ -7,6 +7,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6220465562046328160, guid: 1abc595359f4ac441b93172031391184, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 15.9376
+      objectReference: {fileID: 0}
+    - target: {fileID: 6220465562046328160, guid: 1abc595359f4ac441b93172031391184, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 26.7999
+      objectReference: {fileID: 0}
+    - target: {fileID: 6220465562046328160, guid: 1abc595359f4ac441b93172031391184, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -42.031
+      objectReference: {fileID: 0}
+    - target: {fileID: 6220465562046328160, guid: 1abc595359f4ac441b93172031391184, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 36.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6220465562046328175, guid: 1abc595359f4ac441b93172031391184, type: 3}
+      propertyPath: m_fontSize
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 6220465562046328175, guid: 1abc595359f4ac441b93172031391184, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 28
+      objectReference: {fileID: 0}
     - target: {fileID: 6220465563027993623, guid: 1abc595359f4ac441b93172031391184, type: 3}
       propertyPath: m_Color.b
       value: 0
