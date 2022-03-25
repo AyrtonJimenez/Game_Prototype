@@ -27,8 +27,6 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        
-        
             //Sets up bools for Player input
             _HorizontalInput = Input.GetAxis("Horizontal");
             _VerticalInput = Input.GetAxis("Vertical");

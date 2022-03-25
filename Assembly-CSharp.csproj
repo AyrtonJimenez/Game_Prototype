@@ -66,13 +66,16 @@
     <Compile Include="Assets\Scripts\Items\ItemObject.cs" />
     <Compile Include="Assets\Scripts\HealthBar.cs" />
     <Compile Include="Assets\DisplayInventory.cs" />
+    <Compile Include="Assets\Scripts\Items\CraftableObject.cs" />
     <Compile Include="Assets\Scripts\Items\InventoryObject.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Items\WeaponObject.cs" />
-    <Compile Include="Assets\Scripts\Items\ConsumableObject.cs" />
     <Compile Include="Assets\Scripts\Items\ItemDatabaseObject.cs" />
-    <Compile Include="Assets\Scripts\Items\CraftableObject.cs" />
+    <Compile Include="Assets\Scripts\Items\ConsumableObject.cs" />
+    <Compile Include="Assets\Scripts\Enemies\Enemy1.cs" />
+    <Compile Include="Assets\Scripts\Enemies\EnemyPatrol.cs" />
+    <Compile Include="Assets\Scripts\Enemies\SpawnManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
